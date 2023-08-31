@@ -1,0 +1,453 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>página 2</title>
+
+</head>
+
+
+<style>
+body{
+    background-color: rgba(221, 218, 218, 0.884);
+    overflow-x: hidden;
+}
+html::-webkit-scrollbar{
+    width: 10px;
+}
+
+html::-webkit-scrollbar-track{
+background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+ background-color: rgb(92, 1, 1);
+ opacity: 0.6;
+ border-radius: 50px;
+}
+
+.ElementoBanner{
+    height: 40vh;
+    width: 120vh;
+    margin-top: 4vh;
+    display: flex;
+    flex-direction: row;
+    margin-left: 30vh;
+    margin-bottom: 17vh;
+    
+   
+
+ }
+ .quadros{
+     
+     margin-top: 2vh;
+     
+     margin-left: 2vh;
+     height: 49vh;
+     width: 100vh;
+     background-color: rgba(248, 245, 245, 0.836);
+     border-radius: 2vh;
+ }
+
+ .flexPos{
+     margin-left: 50vh;
+ }
+ 
+.ImagemPlace{
+   height: 20vh;
+   width: 20vh;
+   margin-left: 10vh;
+   margin-top: 1vh;
+
+}
+.ImagemPlace img{
+    height: 20vh;
+   width: 20vh;
+   opacity: 10;
+   border-radius: 1vh;
+}
+.ImagemPlace img:hover{
+    transition: step-start;
+ transform: scale(1.2);
+ cursor: pointer;
+}
+.quadros article{
+  margin-top: 2vh;
+  font-size: 1.6vh;
+  padding: 2vh;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(8, 8, 8);
+  font-weight: bold;
+
+}
+.quadros button{
+    margin-top: -0vh;
+    margin-left: 14vh;
+    position: absolute;
+    background-color: rgba(177, 7, 7, 0.979);
+    color: rgb(247, 243, 243);
+    height: 5vh;
+    width: 8vh;
+    align-items: center;
+    text-align: center;
+    font-size: 2vh ;
+    cursor: pointer;
+    
+}
+.quadros button:hover{
+    color:rgb(3, 3, 3);
+    transition: all 0.8s;
+}
+.banner{
+    width: 100%;
+    height: 30vh;
+    background-color: rgb(0, 0, 0);
+    margin-top: -3vh;
+    margin-bottom: 4vh;
+    
+
+}
+p{
+    color: rgb(155, 3, 3);
+    font-size: 25vh;
+    text-align: center;
+    margin-top: 0vh;
+    font-family: fantasy;
+   
+
+}
+.p:hover{
+    color:rgb(245, 241, 241), 236);
+    transition: all 0.8s;
+    
+}
+#ListaEpisodio{
+    background-color: rgb(201, 196, 196);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 50vh;
+    overflow-x: visible;
+    overflow: auto;
+}
+.ElementosLista{
+    background-color: rgb(46, 44, 44);
+    margin-top: 2vh;
+    width: 150vh;
+       
+    
+}
+.inglista{
+    background-color: rgb(3, 3, 3);
+    color:rgb(248, 245, 245);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:1.3vh;
+    margin-top: 2vh;
+    margin-left: 2vh;
+    margin-right: 2vh;
+    margin-bottom: 2vh;
+    border-radius: 1vh;
+    padding: 10vh;
+    height: 20vh;
+    
+}
+
+
+.inglista button{
+    background-color: rgba(177, 7, 7, 0.979);
+    color: rgb(247, 243, 243);
+    height: 4.5vh;
+    width: 11vh;
+    font-size: 1.7vh ;
+    cursor: pointer;
+    
+}
+.imagemlista img{
+ height:10vh;
+ width: 18vh;
+ 
+ 
+ 
+}
+.inglista h4{
+    color: rgba(190, 6, 6, 0.938);
+}
+#menu-h{
+    list-style: none;
+    padding: 3vh;  
+    font-size: 2vh;
+    background-color: black;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    
+ }
+ #menu-h button{
+    
+     background-color: #000000a8;
+     color: #fff;
+     border: hidden;
+     font-size: 2vh;
+     padding: 10px 15px;
+     cursor: pointer;
+     margin-left: 35px;
+ 
+ }
+ #menu-h button:hover{
+     letter-spacing: 1px;
+     transition: 0.3 all;
+     color: #ff00009c;
+    
+  }
+ 
+ #menu-h li{
+     display: inline; 
+ 
+  }
+ 
+  #menu-h li a{
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+    display: inline-block;
+    font: 'Arial';
+    transition: 0.3s;
+    
+ 
+  }
+  #menu-h li :hover{
+     text-transform: capitalize;
+     color:#ff00009c;
+     border-bottom: solid 1px;
+     
+  }
+
+#banner_principal{
+    background-color: rgb(150, 148, 148);
+    height: 60vh;
+    width: 104%;
+}
+#tema1{
+    background-image: url(img/banner1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: red;
+    height: 60vh;
+    width: 100%;
+    position: absolute;
+    visibility: visible;
+}
+#tema2{
+    background-image: url(img/banner2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: rgb(51, 184, 11);
+    height: 60vh;
+    width: 100%;
+    position: absolute;
+    visibility: hidden;
+
+}
+#tema3{
+    background-image: url(img/banner3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: rgb(8, 130, 245);
+    height: 60vh;
+    width: 100%;
+    position: absolute;
+    visibility: hidden;
+
+}
+#tema4{
+    background-image: url(img/banner4.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+ background-position: center;
+    background-color: rgb(0, 0, 0);
+    height: 60vh;
+    width: 100%;
+    position: absolute;
+    visibility: hidden;
+}
+.legenda{
+    background-color: black;
+    color: rgb(253, 253, 252);
+    margin-top: 30vh;
+    font-family:Arial, Helvetica, sans-serif;
+    padding: 2vh;
+    margin-top: 30vh;
+    font-size: 2vh;
+    opacity: 0.7;
+}
+#navegacaobanner{
+   list-style: none;
+   float: left: ;;
+   background-color:black;
+   padding:2vh;
+   color:white;
+   cursor:pointer;
+
+}
+#navegacaobanner ul{
+    position: absolute;
+    margin-top: -1vh;
+}
+#navegacaobanner ul li{
+   list-style: none;
+   float: left;
+   margin-left: 50vh;
+   font-size: 2vh;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+</style>
+
+<body>
+    <ul id="menu-h" id="inicio">
+
+        <li><a href ="teste.html">•Pingu</a></li>
+        <li><a href ="#catalogo">•Produtos</a></li>
+        <li><a href ="#quemsomos">•Noticias</a></li>
+        <li><a href ="#contato">•Contato</a></li>
+        <button>➝Login</button>
+     </ul>
+  <div class="banner">
+      <p>BANNER</p>
+  </div>>
+
+  <div class="ElementoBanner">
+    <div class="quadros">
+        <div class="ImagemPlace">
+            <img src="img/img2.jpg">
+        </div>
+        <article>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quidem eveniet veniam necessitatibus dicta sunt laborum ducimus ipsum? Voluptates, explicabo? Voluptatibus excepturi sapiente natus asperiores? Facere sunt esse incidunt eum!
+        </article>
+        <button > Pingu  </button>
+    </div>
+
+    <div class="quadros">
+        <div class="ImagemPlace">
+            <img src="img/img5.jfif">
+        </div>
+        <article>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quidem eveniet veniam necessitatibus dicta sunt laborum ducimus ipsum? Voluptates, explicabo? Voluptatibus excepturi sapiente natus asperiores? Facere sunt esse incidunt eum!
+        </article>
+        <button > Pingu   </button>
+    </div>
+
+    <div class="quadros">
+        <div class="ImagemPlace">
+            <img src="img/img8.jpg">
+        </div>
+        <article>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quidem eveniet veniam necessitatibus dicta sunt laborum ducimus ipsum? Voluptates, explicabo? Voluptatibus excepturi sapiente natus asperiores? Facere sunt esse incidunt eum!
+        </article>
+        <button > Pingu   </button>
+    </div>
+</div>
+<br><br>
+
+
+<div id="ListaEpisodio">
+    <div class="ElementosLista">
+    <div class="inglista">
+        <div class="imagemlista">       
+          <img src="img/img9.jfif"></div>
+          
+            <h1>Nome do Episodio</h1>
+            <h4> ipsum, dolor sit amet consectetur adipisicing elit. 
+                Veniam autem at quaerat sequi sunt, eveniet similique voluptate rerum voluptatum voluptatem laudantium soluta, consectetur voluptates. 
+                Nisi labore accusantium vitae saepe earum!</h4>
+            <button>Ver Episodio</button>
+
+
+
+    </div>
+    </div>
+    <div class="ElementosLista">
+        <div class="inglista">
+            <div class="imagemlista">       
+                <img src="img/img10.jfif"></div>
+            <h1>Nome do Episodio</h1>
+            <h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam autem at quaerat sequi sunt, eveniet similique voluptate rerum voluptatum voluptatem laudantium soluta, consectetur voluptates. Nisi labore accusantium vitae saepe earum!</h4>
+            <button>Ver Episodio</button>
+
+
+
+    </div>
+    </div>
+    
+    <div class="ElementosLista">
+        <div class="inglista">
+            <div class="imagemlista">       
+                <img src="img/img11.jfif"></div>
+            <h1>Nome do Episodio</h1>
+            <h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam autem at quaerat sequi sunt, eveniet similique voluptate rerum voluptatum voluptatem laudantium soluta, consectetur voluptates. Nisi labore accusantium vitae saepe earum!</h4>
+            <button>Ver Episodio</button>
+
+
+
+    </div>
+    </div>
+</div>
+
+
+
+
+
+    <div id="banner_principal">
+    <div id="tema1">
+     <div class="legenda">
+         <h1> TITULO</h1>
+         <article>LEGENDAAAAA LALALALLAALALALALALAL</article>
+     </div>
+        </div>
+
+        <div id="tema2">
+            <div class="legenda">
+                <h1> TITULO</h1>
+                <article>LEGENDAAAAA LALALALLAALALALALALAL</article>
+            </div>
+        </div>
+
+        <div id="tema3">
+            <div class="legenda">
+                <h1> TITULO</h1>
+                <article>LEGENDAAAAA LALALALLAALALALALALAL</article>
+            </div>
+        </div>
+
+        <div id="tema4">
+            <div class="legenda">
+                <h1> TITULO</h1>
+                <article>LEGENDAAAAA LALALALLAALALALALALAL</article>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div id="navegacaobanner">
+        <ul>
+            <li id="bt_ant">Anterior</li>
+            <li id="bt_prox">Proximo</li>
+        </ul>
+    </div>
+
+<br> <br> <br>
+
+
+<script src="banner.js"></script>
+
+
+</body>
+</html>
